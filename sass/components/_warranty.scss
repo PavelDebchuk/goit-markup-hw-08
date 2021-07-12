@@ -1,28 +1,25 @@
 .warranty {
-    box-sizing: border-box;
-    .warranty__list {
-        
-        .warranty__advantage {
-            max-width: 450px;
-            letter-spacing: 0.04em;
-            margin-bottom: 30px;
-        }
-        .warranty__icons {
-            background: #F5F4FA;
-            text-align: center;
-            padding:25px 0 25px 0;
-            border-radius: 4px;
-            margin-bottom: 30px;
-        }
-        .warranty__icons-diagram {
-            padding:33.2px 0 33.11px 0;
-        }
-        .warranty__text {
-            font-size:14px;
-            line-height:24px;
-            color:var(--color-silver);
-        }
-    } 
+    box-sizing: border-box; 
+    .warranty__advantage {
+        max-width: 450px;
+        letter-spacing: 0.04em;
+        margin-bottom: 30px;
+    }
+    .warranty__icons {
+        background: #F5F4FA;
+        text-align: center;
+        padding:21px 0 25px 0;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+    .warranty__icons-diagram {
+        padding:33.2px 0 33.11px 0;
+    }
+    .warranty__text {
+        font-size:14px;
+        line-height:24px;
+        color:var(--color-silver);
+    }
 }
 .section-text {
     text-align: center;

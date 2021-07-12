@@ -848,11 +848,11 @@ form {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  padding: 10px 32px;
+  padding: 10px 39px;
   border-radius: 4px;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (min-width: 480px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 480px), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/max_480/Header_2x-min.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/max_480/Header_2x-min.jpg);
@@ -863,8 +863,8 @@ form {
   .hero {
     max-width: 1200px;
     margin: 0 auto;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/max_768/Header_2x-min.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/max_768/Header_2x-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/max_768/Header-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/max_768/Header-min.jpg);
     background-position: top;
     background-repeat: no-repeat;
     text-align: center;
@@ -872,7 +872,7 @@ form {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 768px), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/max_768/Header_2x-min.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/max_768/Header_2x-min.jpg);
@@ -885,13 +885,13 @@ form {
     margin: 0 auto;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/max_1200/background.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/max_1200/background.jpg);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     text-align: center;
     background-size: cover;
     padding: 200px 0;
   }
-  .hero__title {
+  .hero .hero__title {
     font-weight: 900;
     font-size: 44px;
     margin-bottom: 30px;
@@ -899,7 +899,7 @@ form {
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-width: 1200px), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/max_1200/background_2x-min.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/max_1200/background_2x-min.jpg);
@@ -911,25 +911,25 @@ form {
           box-sizing: border-box;
 }
 
-.warranty .warranty__list .warranty__advantage {
+.warranty .warranty__advantage {
   max-width: 450px;
   letter-spacing: 0.04em;
   margin-bottom: 30px;
 }
 
-.warranty .warranty__list .warranty__icons {
+.warranty .warranty__icons {
   background: #F5F4FA;
   text-align: center;
-  padding: 25px 0 25px 0;
+  padding: 21px 0 25px 0;
   border-radius: 4px;
   margin-bottom: 30px;
 }
 
-.warranty .warranty__list .warranty__icons-diagram {
+.warranty .warranty__icons-diagram {
   padding: 33.2px 0 33.11px 0;
 }
 
-.warranty .warranty__list .warranty__text {
+.warranty .warranty__text {
   font-size: 14px;
   line-height: 24px;
   color: var(--color-silver);
@@ -1191,7 +1191,62 @@ form {
   padding: 60px 0;
 }
 
-.footer .footer__logo {
+.footer__contact {
+  display: block;
+  line-height: 24px;
+  margin-top: 9px;
+  padding: 0;
+}
+
+.footer__contact-link {
+  color: var(--color-silver);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__contact-link:hover, .footer__contact-link:focus {
+  color: var(--color-hover);
+}
+
+.footer__list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.footer__social {
+  margin-bottom: 60px;
+}
+
+.footer__social-item {
+  background-color: #44454e;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.footer__social-item:nth-child(4) {
+  margin-right: 0;
+}
+
+.footer__social-link {
+  display: block;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__social-link:hover, .footer__social-link:focus {
+  background-color: var(--color-hover);
+}
+
+.footer__social-logo {
+  fill: var(--color-white);
+  display: block;
+}
+
+.footer__logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 24px;
@@ -1202,59 +1257,8 @@ form {
   color: var(--color-white);
 }
 
-.footer .footer__logo .footer__logo-color {
+.footer__logo .footer__logo-color {
   color: var(--color-hover);
-}
-
-.footer .footer__contact {
-  display: block;
-  line-height: 24px;
-  margin-top: 9px;
-  padding: 0;
-}
-
-.footer .footer__contact-link {
-  color: var(--color-silver);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer .footer__contact-link:hover, .footer .footer__contact-link:focus {
-  color: var(--color-hover);
-}
-
-.footer .footer__list {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.footer .footer__social {
-  margin-bottom: 60px;
-}
-
-.footer .footer__social-item {
-  background-color: #44454e;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.footer .footer__social-link {
-  display: block;
-  padding: 12px;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer .footer__social-link:hover, .footer .footer__social-link:focus {
-  background-color: var(--color-hover);
-}
-
-.footer .footer__social-logo {
-  fill: var(--color-white);
-  display: block;
 }
 
 .footer__title {
@@ -1296,8 +1300,9 @@ form {
 }
 
 .input-style {
-  width: 290px;
+  width: 100%;
   height: 50px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background: transparent;
@@ -1308,15 +1313,19 @@ form {
   color: var(--color-white);
 }
 
+.footer__form {
+  width: 100%;
+}
+
 .footer__form-button {
-  padding: 10px 29px;
+  padding: 13px 34px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px auto;
+  margin: 0 auto;
   background: var(--color-hover);
   color: var(--color-white);
   font-size: 16px;
@@ -1338,12 +1347,6 @@ form {
   fill: var(--color-white);
 }
 
-@media screen and (min-width: 480px) {
-  .input-style {
-    width: 358px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer__row {
     -webkit-box-orient: horizontal;
@@ -1358,12 +1361,20 @@ form {
         -ms-flex-align: baseline;
             align-items: baseline;
   }
+  .footer__form {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .footer__row {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .footer__logo {
     margin-right: 93px;
-    font-size: 26;
+    font-size: 26px;
   }
   .footer__social {
     margin-left: 66px;
@@ -1385,6 +1396,9 @@ form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer__form {
     margin-left: 93px;
@@ -1394,6 +1408,9 @@ form {
   }
   .footer__title {
     text-align: left;
+  }
+  .input-style {
+    width: 358px;
   }
 }
 
