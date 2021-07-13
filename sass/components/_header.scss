@@ -90,6 +90,11 @@
     color:var(--color-hover);
     fill: var(--color-hover); 
 }
+
+.menu-open {
+    position: absolute;
+    right: 30px;
+}
  
 .menu-close {
     position: absolute;
