@@ -11,24 +11,26 @@
     background-repeat: no-repeat;
     text-align: center;
     background-size: cover;
-    padding: 118px 0;
-    .hero__title {
-        font-weight: 900;
-        text-transform: uppercase;
-        color:var(--color-white);
-        font-size: 26px;
-        margin-bottom: 30px;
-        line-height: 42px;
-    }
-    .hero__modal {
-        background: #2196F3;
-        color: var(--color-white);
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 30px;
-        padding: 10px 39px;
-        border-radius: 4px;
-    }
+    padding: 118px 0; 
+}
+
+.hero__title {
+    font-weight: 900;
+    text-transform: uppercase;
+    color:var(--color-white);
+    font-size: 26px;
+    margin-bottom: 30px;
+    line-height: 42px;
+}
+
+.hero__modal {
+    background: #2196F3;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px 39px;
+    border-radius: 4px;
 }
 
 @media (min-device-pixel-ratio: 2) and (min-width:1200px),

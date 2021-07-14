@@ -27,10 +27,25 @@ section {
     } 
 }
 
-.title-none {
+.section__display-none {
+    padding-top:0;
+    display: none;
+}
+
+.section__background-silver {
+    background:#F5F4FA;
+}
+
+@media screen and (min-width:1200px) {
+    .section__display-none {
+        display:block;
+    }    
+}
+
+.section__title-none {
     visibility: hidden;
 }
-.section-title {
+.section__title {
     font-weight: 700;
     font-size: 28px;
     color:var(--color-text);
@@ -42,13 +57,14 @@ section {
     }
 }
 
-.section-text {
+.warranty__text {
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
     color:var(--color-text);
     text-transform: uppercase;
 }
+
 form {
     position: relative;
 }
