@@ -162,15 +162,19 @@
 }
 
 .mobile-contacts__link {
- font-weight: 500;
-    font-size: 34px;
+    font-weight: 500;
+    font-size: 25px;
     line-height: 28px;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--color-hover);
     &:nth-child(2) {
         color:black;
+    } 
+    @media screen and (min-width:400px) {
+        font-size: 34px;
     }
+ 
 }
 
 .mobile-contacts__link-email {
@@ -185,10 +189,13 @@
     &:nth-child(2) {
         margin-bottom: 64px;
     }
+
 }
 
 .mobile-media{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     &__link {
         margin-right: 20px;
         font-size: 18px;
@@ -199,6 +206,7 @@
             margin: 0;
         }
     }
+    
 }
 
 .link::before {
