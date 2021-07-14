@@ -6,7 +6,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
                 ),
-                url();
+                url('/images/max_480/Header_min.jpg');
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -41,7 +41,7 @@
             linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
-            ),url(./images/max_1200/background_2x-min.jpg);
+            ),url('./images/max_1200/background_2x-min.jpg');
         }
     }
 
@@ -55,7 +55,7 @@
             linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
-            ),url(./images/max_768/Header_2x-min.jpg);
+            ),url('./images/max_768/Header_2x-min.jpg');
         }
     }
 
@@ -67,7 +67,7 @@
             linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
-            ),url(./images/max_768/Header_2x-min.jpg);
+            ),url('/images/max_480/Header_2x-min.jpg');
         }
     }
 
@@ -82,7 +82,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
             ),
-        url(./images/max_768/Header.jpg);
+        url('./images/max_768/Header.jpg');
         background-position: top;
         background-repeat: no-repeat;
         text-align: center;
@@ -100,7 +100,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
             ),
-        url(./images/max_1200/background.jpg);
+        url('./images/max_1200/background.jpg');
         background-position: top;
         background-repeat: no-repeat;
         text-align: center;
